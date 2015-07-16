@@ -1,7 +1,8 @@
 # file: .travis.yml
 language: objective-c
 osx_image: xcode6.4
-xcode_project: TreeControl
+xcode_project: TreeControl.xcodeproj
+
 
 before_install:
 - brew update
@@ -10,7 +11,9 @@ before_install:
 
 script:
 
-- xctool -project TreeControl.xcodeproj  -scheme "TreeControl" -sdk macosx10.10 -configuration Debug -destination "platform=OS X" -PBXBuildsContinueAfterErrors=0 test | xcpretty -c
+- xctool -project TreeControl.xcodeproj -scheme "TreeControl" -sdk macosx10.10 -configuration Debug -destination "platform=OS X" -PBXBuildsContinueAfterErrors=0 test | xcpretty -c
 
 
 # http://docs.travis-ci.com/user/languages/objective-c/
+
+

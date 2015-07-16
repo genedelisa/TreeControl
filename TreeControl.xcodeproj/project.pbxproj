@@ -10,14 +10,14 @@
 		B04713C51B5A5F500078E272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713C41B5A5F500078E272 /* AppDelegate.swift */; };
 		B04713C71B5A5F500078E272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713C61B5A5F500078E272 /* ViewController.swift */; };
 		B04713CD1B5A5F500078E272 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = B04713CC1B5A5F500078E272 /* Credits.html */; };
-		B04713CF1B5A5F500078E272 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B04713CE1B5A5F500078E272 /* .gitignore */; };
-		B04713D11B5A5F500078E272 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B04713D01B5A5F500078E272 /* .travis.yml */; };
 		B04713D31B5A5F500078E272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04713D21B5A5F500078E272 /* Assets.xcassets */; };
 		B04713D61B5A5F500078E272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04713D41B5A5F500078E272 /* Main.storyboard */; };
 		B04713E11B5A5F500078E272 /* TreeControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713E01B5A5F500078E272 /* TreeControlTests.swift */; };
 		B04713EC1B5A5FEF0078E272 /* FileSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */; };
 		B04713EF1B5A60A30078E272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B04713ED1B5A60A30078E272 /* README.md */; };
 		B04713F01B5A60A30078E272 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B04713EE1B5A60A30078E272 /* LICENSE */; };
+		B04713F21B5A60A30078E272 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B04713F11B5A60A30078E272 /* .gitignore */; };
+		B04713F41B5A60A30078E272 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B04713F31B5A60A30078E272 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,6 @@
 		B04713C41B5A5F500078E272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04713C61B5A5F500078E272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B04713CC1B5A5F500078E272 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Credits.html; path = TreeControl/Credits.html; sourceTree = "<group>"; };
-		B04713CE1B5A5F500078E272 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = TreeControl/.gitignore; sourceTree = "<group>"; };
-		B04713D01B5A5F500078E272 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = TreeControl/.travis.yml; sourceTree = "<group>"; };
 		B04713D21B5A5F500078E272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04713D51B5A5F500078E272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B04713D71B5A5F500078E272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemItem.swift; sourceTree = "<group>"; };
 		B04713ED1B5A60A30078E272 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B04713EE1B5A60A30078E272 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B04713F11B5A60A30078E272 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B04713F31B5A60A30078E272 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +69,11 @@
 		B04713B81B5A5F500078E272 = {
 			isa = PBXGroup;
 			children = (
+				B04713F31B5A60A30078E272 /* .travis.yml */,
+				B04713F11B5A60A30078E272 /* .gitignore */,
 				B04713ED1B5A60A30078E272 /* README.md */,
 				B04713EE1B5A60A30078E272 /* LICENSE */,
 				B04713CC1B5A5F500078E272 /* Credits.html */,
-				B04713CE1B5A5F500078E272 /* .gitignore */,
-				B04713D01B5A5F500078E272 /* .travis.yml */,
 				B04713C31B5A5F500078E272 /* TreeControl */,
 				B04713DF1B5A5F500078E272 /* TreeControlTests */,
 				B04713C21B5A5F500078E272 /* Products */,
@@ -191,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04713F41B5A60A30078E272 /* .travis.yml in Resources */,
+				B04713F21B5A60A30078E272 /* .gitignore in Resources */,
 				B04713F01B5A60A30078E272 /* LICENSE in Resources */,
-				B04713CF1B5A5F500078E272 /* .gitignore in Resources */,
-				B04713D11B5A5F500078E272 /* .travis.yml in Resources */,
 				B04713D61B5A5F500078E272 /* Main.storyboard in Resources */,
 				B04713CD1B5A5F500078E272 /* Credits.html in Resources */,
 				B04713D31B5A5F500078E272 /* Assets.xcassets in Resources */,
