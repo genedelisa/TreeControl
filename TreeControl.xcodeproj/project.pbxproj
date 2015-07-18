@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B04713C51B5A5F500078E272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713C41B5A5F500078E272 /* AppDelegate.swift */; };
+		B04713C71B5A5F500078E272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713C61B5A5F500078E272 /* ViewController.swift */; };
+		B04713C91B5A5F500078E272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B04713C81B5A5F500078E272 /* README.md */; };
+		B04713CB1B5A5F500078E272 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B04713CA1B5A5F500078E272 /* LICENSE */; };
+		B04713CD1B5A5F500078E272 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = B04713CC1B5A5F500078E272 /* Credits.html */; };
+		B04713CF1B5A5F500078E272 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B04713CE1B5A5F500078E272 /* .gitignore */; };
+		B04713D11B5A5F500078E272 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B04713D01B5A5F500078E272 /* .travis.yml */; };
+		B04713D31B5A5F500078E272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04713D21B5A5F500078E272 /* Assets.xcassets */; };
+		B04713D61B5A5F500078E272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04713D41B5A5F500078E272 /* Main.storyboard */; };
+		B04713E11B5A5F500078E272 /* TreeControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713E01B5A5F500078E272 /* TreeControlTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B04713DD1B5A5F500078E272 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04713B91B5A5F500078E272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B04713C01B5A5F500078E272;
+			remoteInfo = TreeControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B04713C11B5A5F500078E272 /* TreeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04713C41B5A5F500078E272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B04713C61B5A5F500078E272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B04713C81B5A5F500078E272 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B04713CA1B5A5F500078E272 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B04713CC1B5A5F500078E272 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		B04713CE1B5A5F500078E272 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B04713D01B5A5F500078E272 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		B04713D21B5A5F500078E272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04713D51B5A5F500078E272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B04713D71B5A5F500078E272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04713DC1B5A5F500078E272 /* TreeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04713E01B5A5F500078E272 /* TreeControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeControlTests.swift; sourceTree = "<group>"; };
+		B04713E21B5A5F500078E272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B04713BE1B5A5F500078E272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04713D91B5A5F500078E272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B04713B81B5A5F500078E272 = {
+			isa = PBXGroup;
+			children = (
+				B04713C31B5A5F500078E272 /* TreeControl */,
+				B04713DF1B5A5F500078E272 /* TreeControlTests */,
+				B04713C21B5A5F500078E272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B04713C21B5A5F500078E272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04713C11B5A5F500078E272 /* TreeControl.app */,
+				B04713DC1B5A5F500078E272 /* TreeControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04713C31B5A5F500078E272 /* TreeControl */ = {
+			isa = PBXGroup;
+			children = (
+				B04713C41B5A5F500078E272 /* AppDelegate.swift */,
+				B04713C61B5A5F500078E272 /* ViewController.swift */,
+				B04713C81B5A5F500078E272 /* README.md */,
+				B04713CA1B5A5F500078E272 /* LICENSE */,
+				B04713CC1B5A5F500078E272 /* Credits.html */,
+				B04713CE1B5A5F500078E272 /* .gitignore */,
+				B04713D01B5A5F500078E272 /* .travis.yml */,
+				B04713D21B5A5F500078E272 /* Assets.xcassets */,
+				B04713D41B5A5F500078E272 /* Main.storyboard */,
+				B04713D71B5A5F500078E272 /* Info.plist */,
+			);
+			path = TreeControl;
+			sourceTree = "<group>";
+		};
+		B04713DF1B5A5F500078E272 /* TreeControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				B04713E01B5A5F500078E272 /* TreeControlTests.swift */,
+				B04713E21B5A5F500078E272 /* Info.plist */,
+			);
+			path = TreeControlTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B04713C01B5A5F500078E272 /* TreeControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04713E51B5A5F500078E272 /* Build configuration list for PBXNativeTarget "TreeControl" */;
+			buildPhases = (
+				B04713BD1B5A5F500078E272 /* Sources */,
+				B04713BE1B5A5F500078E272 /* Frameworks */,
+				B04713BF1B5A5F500078E272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeControl;
+			productName = TreeControl;
+			productReference = B04713C11B5A5F500078E272 /* TreeControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B04713DB1B5A5F500078E272 /* TreeControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04713E81B5A5F500078E272 /* Build configuration list for PBXNativeTarget "TreeControlTests" */;
+			buildPhases = (
+				B04713D81B5A5F500078E272 /* Sources */,
+				B04713D91B5A5F500078E272 /* Frameworks */,
+				B04713DA1B5A5F500078E272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B04713DE1B5A5F500078E272 /* PBXTargetDependency */,
+			);
+			name = TreeControlTests;
+			productName = TreeControlTests;
+			productReference = B04713DC1B5A5F500078E272 /* TreeControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04713B91B5A5F500078E272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Gene De Lisa";
+				TargetAttributes = {
+					B04713C01B5A5F500078E272 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B04713DB1B5A5F500078E272 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B04713C01B5A5F500078E272;
+					};
+				};
+			};
+			buildConfigurationList = B04713BC1B5A5F500078E272 /* Build configuration list for PBXProject "TreeControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04713B81B5A5F500078E272;
+			productRefGroup = B04713C21B5A5F500078E272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B04713C01B5A5F500078E272 /* TreeControl */,
+				B04713DB1B5A5F500078E272 /* TreeControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B04713BF1B5A5F500078E272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04713CB1B5A5F500078E272 /* LICENSE in Resources */,
+				B04713CF1B5A5F500078E272 /* .gitignore in Resources */,
+				B04713D11B5A5F500078E272 /* .travis.yml in Resources */,
+				B04713D61B5A5F500078E272 /* Main.storyboard in Resources */,
+				B04713CD1B5A5F500078E272 /* Credits.html in Resources */,
+				B04713D31B5A5F500078E272 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04713DA1B5A5F500078E272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B04713BD1B5A5F500078E272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04713C91B5A5F500078E272 /* README.md in Sources */,
+				B04713C71B5A5F500078E272 /* ViewController.swift in Sources */,
+				B04713C51B5A5F500078E272 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04713D81B5A5F500078E272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04713E11B5A5F500078E272 /* TreeControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B04713DE1B5A5F500078E272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B04713C01B5A5F500078E272 /* TreeControl */;
+			targetProxy = B04713DD1B5A5F500078E272 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B04713D41B5A5F500078E272 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04713D51B5A5F500078E272 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04713E31B5A5F500078E272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B04713E41B5A5F500078E272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B04713E61B5A5F500078E272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TreeControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TreeControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B04713E71B5A5F500078E272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TreeControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TreeControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B04713E91B5A5F500078E272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TreeControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TreeControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeControl.app/Contents/MacOS/TreeControl";
+			};
+			name = Debug;
+		};
+		B04713EA1B5A5F500078E272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TreeControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TreeControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeControl.app/Contents/MacOS/TreeControl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B04713BC1B5A5F500078E272 /* Build configuration list for PBXProject "TreeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04713E31B5A5F500078E272 /* Debug */,
+				B04713E41B5A5F500078E272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04713E51B5A5F500078E272 /* Build configuration list for PBXNativeTarget "TreeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04713E61B5A5F500078E272 /* Debug */,
+				B04713E71B5A5F500078E272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B04713E81B5A5F500078E272 /* Build configuration list for PBXNativeTarget "TreeControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04713E91B5A5F500078E272 /* Debug */,
+				B04713EA1B5A5F500078E272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04713B91B5A5F500078E272 /* Project object */;
+}
