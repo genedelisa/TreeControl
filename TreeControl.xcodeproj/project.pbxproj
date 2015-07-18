@@ -14,7 +14,6 @@
 		B04713D61B5A5F500078E272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04713D41B5A5F500078E272 /* Main.storyboard */; };
 		B04713E11B5A5F500078E272 /* TreeControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713E01B5A5F500078E272 /* TreeControlTests.swift */; };
 		B04713EC1B5A5FEF0078E272 /* FileSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */; };
-		B04713EF1B5A60A30078E272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B04713ED1B5A60A30078E272 /* README.md */; };
 		B04713F01B5A60A30078E272 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B04713EE1B5A60A30078E272 /* LICENSE */; };
 		B04713F21B5A60A30078E272 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B04713F11B5A60A30078E272 /* .gitignore */; };
 		B04713F41B5A60A30078E272 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B04713F31B5A60A30078E272 /* .travis.yml */; };
@@ -216,7 +215,6 @@
 			files = (
 				B04713C71B5A5F500078E272 /* ViewController.swift in Sources */,
 				B04713C51B5A5F500078E272 /* AppDelegate.swift in Sources */,
-				B04713EF1B5A60A30078E272 /* README.md in Sources */,
 				B04713EC1B5A5FEF0078E272 /* FileSystemItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +398,7 @@
 				B04713E71B5A5F500078E272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04713E81B5A5F500078E272 /* Build configuration list for PBXNativeTarget "TreeControlTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +407,7 @@
 				B04713EA1B5A5F500078E272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

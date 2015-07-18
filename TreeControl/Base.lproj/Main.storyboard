@@ -679,7 +679,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="K7J-0f-M0x" viewBased="YES" indentationPerLevel="16" outlineTableColumn="rbh-VU-DHQ" id="AGW-MP-knL">
-                                            <rect key="frame" x="0.0" y="0.0" width="478" height="252"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="478" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -820,6 +820,10 @@
                             <constraint firstAttribute="bottom" secondItem="yrw-PA-emT" secondAttribute="bottom" id="veb-4i-J8T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outlineView" destination="AGW-MP-knL" id="67C-yL-eUW"/>
+                        <outlet property="treeController" destination="Tq7-2n-Egz" id="cr9-b4-ynT"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="XFk-LP-CEG" customClass="FileSystemItem" customModule="TreeControl" customModuleProvider="target"/>

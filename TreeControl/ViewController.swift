@@ -10,10 +10,21 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet var treeController: NSTreeController!
+    
+    @IBOutlet var outlineView: NSOutlineView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let treeContentArrayBinding = self.treeController.infoForBinding("contentArray")
+        let treeSelectionIndexes = self.treeController.infoForBinding("selectionIndexPaths")
+        let outlineViewContentBinding = self.outlineView.infoForBinding("content")
+        print(treeContentArrayBinding)
+        print(treeSelectionIndexes)
+        print(outlineViewContentBinding)
+
     }
 
     override var representedObject: AnyObject? {
