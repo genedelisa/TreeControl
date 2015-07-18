@@ -17,6 +17,7 @@
 		B04713D31B5A5F500078E272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04713D21B5A5F500078E272 /* Assets.xcassets */; };
 		B04713D61B5A5F500078E272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04713D41B5A5F500078E272 /* Main.storyboard */; };
 		B04713E11B5A5F500078E272 /* TreeControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713E01B5A5F500078E272 /* TreeControlTests.swift */; };
+		B04713EC1B5A5FEF0078E272 /* FileSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B04713DC1B5A5F500078E272 /* TreeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04713E01B5A5F500078E272 /* TreeControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeControlTests.swift; sourceTree = "<group>"; };
 		B04713E21B5A5F500078E272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		B04713C31B5A5F500078E272 /* TreeControl */ = {
 			isa = PBXGroup;
 			children = (
+				B04713EB1B5A5FEF0078E272 /* FileSystemItem.swift */,
 				B04713C41B5A5F500078E272 /* AppDelegate.swift */,
 				B04713C61B5A5F500078E272 /* ViewController.swift */,
 				B04713C81B5A5F500078E272 /* README.md */,
@@ -214,6 +217,7 @@
 				B04713C91B5A5F500078E272 /* README.md in Sources */,
 				B04713C71B5A5F500078E272 /* ViewController.swift in Sources */,
 				B04713C51B5A5F500078E272 /* AppDelegate.swift in Sources */,
+				B04713EC1B5A5FEF0078E272 /* FileSystemItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,12 +6,12 @@
 [![GitHub tag](https://img.shields.io/github/tag/genedelisa/tablebinding.svg)](https://github.com/genedelisa/TreeControl/)
 [![GitHub release](https://img.shields.io/github/release/genedelisa/tablebinding.svg)](https://github.com/genedelisa/TreeControl/)
 
-An example using
+A Cocoa example using an NSOutlineView bound to a TreeControl.
 
 
 ## Blog post for this example.
 
-[Blog post](http://www.rockhoppertech.com/blog/)
+[Blog post](http://www.rockhoppertech.com/blog/treecontrol)
 
 
 ## Bugs
