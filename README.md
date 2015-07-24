@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/genedelisa/TableBinding.svg)](https://travis-ci.org/genedelisa/TreeControl)
 [![GitHub tag](https://img.shields.io/github/tag/genedelisa/tablebinding.svg)](https://github.com/genedelisa/TreeControl/)
 [![GitHub release](https://img.shields.io/github/release/genedelisa/tablebinding.svg)](https://github.com/genedelisa/TreeControl/)
+![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
+
 
 A Cocoa example using an NSOutlineView bound to a TreeControl.
 
@@ -35,7 +37,7 @@ If you find one, [please add it to issues](https://github.com/genedelisa/TreeCon
 
 Please read the [LICENSE](LICENSE) for details.
 
-## Credits
+## Credits :octocat:
 
 *	[Gene De Lisa's development blog](http://rockhoppertech.com/blog/)
 *	[Gene De Lisa's music blog](http://genedelisa.com/)
