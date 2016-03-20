@@ -76,7 +76,8 @@ class FileSystemItem: NSObject {
         get {
             if let p = parent {
                 // recurse up the hierarchy, prepending each parent’s path
-                return p.fullPath.stringByAppendingPathComponent(relativePath)
+                return NSURL(string: p.fullPath)!.URLByAppendingPathComponent(relativePath).absoluteString
+                //return p.fullPath.stringByAppendingPathComponent(relativePath)
             } else {
                 // If no parent, return our own relative path
                 return relativePath
@@ -140,7 +141,7 @@ class FileSystemItem: NSObject {
     }
     
     init(path:String, parent:FileSystemItem?) {
-        self.relativePath = path.lastPathComponent
+        self.relativePath = NSURL(fileURLWithPath: path).lastPathComponent
         self.parent = parent
         super.init()
     }
