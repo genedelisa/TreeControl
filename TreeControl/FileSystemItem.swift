@@ -9,145 +9,139 @@
 import Foundation
 
 
+/// A representation of the file system.
+/// It is KVO compliant, so a `TreeControl` can be bound to it.
+/// - Author: Gene De Lisa
+
+@objcMembers
 class FileSystemItem: NSObject {
     
-    var relativePath:String!
+
+    var relativePath: String!
     
-    var parent:FileSystemItem?
+    var parent: FileSystemItem?
     
-    var children:[FileSystemItem]? {
-        get {
-            let fileManager = NSFileManager.defaultManager()
-            
-            var isDir: ObjCBool = false
-            let valid = fileManager.fileExistsAtPath(fullPath, isDirectory:&isDir)
-            
-            if valid && isDir {
-                self.isLeaf = false
-                do {
-                    let array = try fileManager.contentsOfDirectoryAtPath(fullPath)
-                    var kids = [FileSystemItem]()
-                    for name in array {
-                        let child = FileSystemItem(path: name, parent: self)
-                        do {
-                            let fileAttributes = try NSFileManager.defaultManager().attributesOfItemAtPath(child.fullPath)
-                            if let fileType = fileAttributes["NSFileType"] as? String {
-                                switch fileType {
-                                case "NSFileTypeRegular" :
-                                    child.isLeaf = true
-                                    print("\(child.fullPath) regular")
-                                case "NSFileTypeDirectory" :
-                                    child.isLeaf = false
-                                    print("\(child.fullPath) directory")
-                                default: break
-                                }
+    var children: [FileSystemItem]? {
+        
+        let fileManager = FileManager.default
+        
+        var isDir: ObjCBool = false
+        let valid = fileManager.fileExists(atPath: fullPath, isDirectory: &isDir)
+        
+        if valid && isDir.boolValue {
+            self.isLeaf = false
+            do {
+                let array = try fileManager.contentsOfDirectory(atPath: fullPath)
+                var kids = [FileSystemItem]()
+                for name in array {
+                    let child = FileSystemItem(path: name, parent: self)
+                    do {
+                        let fileAttributes = try FileManager.default.attributesOfItem(atPath: child.fullPath)
+                        
+                        if let fileType = fileAttributes[.type] as? FileAttributeType {
+                            switch fileType {
+                            case FileAttributeType.typeRegular:
+                                child.isLeaf = true
+                                print("\(child.fullPath) regular")
+                            case FileAttributeType.typeDirectory:
+                                child.isLeaf = false
+                                print("\(child.fullPath) directory")
+                            default: break
                             }
-                        } catch {
-                            print("couldnt get attribs for \(child)")
                         }
                         
-                        kids.append(child)
+                    } catch {
+                        print("couldnt get attribs for \(child)")
                     }
-                    return kids
-                } catch {
-                    print("oops. couldn't get contents at \(fullPath)")
+                    
+                    kids.append(child)
                 }
-
-            } else {
-                self.isLeaf = true
-                return nil
+                return kids
+            } catch {
+                print("oops. couldn't get contents at \(fullPath)")
             }
+            
+        } else {
+            self.isLeaf = true
             return nil
         }
-        
-        set {
-            self.children = newValue
-        }
+        return nil
     }
     
     
-    class var rootItem:FileSystemItem {
-        get {
-            return FileSystemItem(path: "/", parent: nil)
-        }
+    class var rootItem: FileSystemItem {
+        return FileSystemItem(path: "/", parent: nil)
     }
     
-    var fullPath:String {
-        get {
-            if let p = parent {
-                // recurse up the hierarchy, prepending each parent’s path
-                return NSURL(string: p.fullPath)!.URLByAppendingPathComponent(relativePath).absoluteString
-                //return p.fullPath.stringByAppendingPathComponent(relativePath)
-            } else {
-                // If no parent, return our own relative path
-                return relativePath
-            }
+    var fullPath: String {
+        if let p = parent {
+            // recurse up the hierarchy, prepending each parent’s path
+            return URL(string: p.fullPath)!.appendingPathComponent(relativePath).absoluteString
+        } else {
+            // If no parent, return our own relative path
+            return relativePath
         }
     }
     
     var isLeaf = false
     
-    var size:Int {
-        get {
-            do {
-                let fileAttributes = try NSFileManager.defaultManager().attributesOfItemAtPath(fullPath)
-                if let size = fileAttributes["NSFileSize"] as? Int {
-                    //                let kb = Double(size.doubleValue / 1000.0)
-                    //                let mb = Double(size.doubleValue / 1000000.0)
-                    return size
-                    
-                } else {
-                    return 0
-                }
-            } catch {
+    var size: Int {
+        do {
+            let fileAttributes = try FileManager.default.attributesOfItem(atPath: fullPath)
+            if let size = fileAttributes[.size] as? Int {
+                //                let kb = Double(size.doubleValue / 1000.0)
+                //                let mb = Double(size.doubleValue / 1000000.0)
+                return size
+                
+            } else {
                 return 0
             }
+        } catch {
+            return 0
         }
     }
     
-    var creationDate:NSDate? {
-        get {
-            do {
-                let fileAttributes = try NSFileManager.defaultManager().attributesOfItemAtPath(fullPath)
-                if let date = fileAttributes["NSFileCreationDate"] as? NSDate {
-                    return date
-                } else {
-                    return nil
-                }
-            } catch {
+    var creationDate: Date? {
+        do {
+            let fileAttributes = try FileManager.default.attributesOfItem(atPath: fullPath)
+            if let date = fileAttributes[.creationDate] as? Date {
+                return date
+            } else {
                 return nil
             }
+        } catch {
+            return nil
         }
     }
     
-    var modificationDate:NSDate? {
-        get {
-            do {
-                let fileAttributes = try NSFileManager.defaultManager().attributesOfItemAtPath(fullPath)
-                if let date = fileAttributes["NSFileModificationDate"] as? NSDate {
-                    return date
-                } else {
-                    return nil
-                }
-            } catch {
+    var modificationDate: Date? {
+        do {
+            let fileAttributes = try FileManager.default.attributesOfItem(atPath: fullPath)
+            if let date = fileAttributes[.modificationDate] as? Date {
+                return date
+            } else {
                 return nil
             }
+        } catch {
+            return nil
         }
     }
+    
+    // MARK: Initializers
     
     override init() {
         self.relativePath = "/"
         super.init()
     }
     
-    init(path:String, parent:FileSystemItem?) {
-        self.relativePath = NSURL(fileURLWithPath: path).lastPathComponent
+    init(path: String, parent: FileSystemItem?) {
+        self.relativePath = URL(fileURLWithPath: path).lastPathComponent
         self.parent = parent
         super.init()
     }
     
-
-    func getChild(atIndex:Int) -> FileSystemItem {
+    
+    func getChild(_ atIndex: Int) -> FileSystemItem {
         return children![atIndex]
     }
     
@@ -158,6 +152,5 @@ class FileSystemItem: NSObject {
             return 0
         }
     }
-    
     
 }
